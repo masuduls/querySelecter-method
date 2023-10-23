@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Masudul Shafi querySelector Method</title>
+		<style>
+			body 
+			{
+				background-color:gray;
+			}
+			
+			.div1
+			{
+				margin:20px;
+				border-style:bold;
+			}
+			
+			.message
+			{
+				margin:20px;
+				border-style:bold;
+			}
+			
+		</style>
+		<script>
+			function method1() 
+			{
+				let r = parseInt(Math.random() * 256);
+				let g = parseInt(Math.random() * 256);
+				let b = parseInt(Math.random() * 256);
+				
+				document.querySelector(".message").style.color = "rgb(" + r + "," + g + "," + b +")";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div class = "div1">
+			<p>Div 1</p>
+		</div>
+		<p class = "message">Testing Phrase</p>
+		<button onclick = "method1();">Click me!</button>
+
+	</body>
+<html>	
